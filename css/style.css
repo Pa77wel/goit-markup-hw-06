@@ -338,7 +338,7 @@ header {
     color: var(--textcolor);
     position: relative;
 }
-.form__check-textt a {
+.form__check-text a {
     color: var(--blue);
 }
 .form__check-field {
@@ -347,6 +347,31 @@ header {
     padding: 0;
     display: flex;
     justify-content: center;
+}
+.form__check-icon {
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    opacity: 0;
+    fill: var(--blue);
+    background-color: var(--black);
+}
+input:checked + span .form__check-icon {
+    opacity: 1;
+}
+.checked:checked {
+    opacity:0;
+}
+.form__fieldset:hover .form__svg {
+    fill: var(--blue);
+}
+.form__fieldset:hover {
+    border-color: var(--blue);
+}
+.send-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 .send-wrapper__button {
     width: 200px;
@@ -360,17 +385,6 @@ header {
     letter-spacing: 0.06em;
     border-radius: 4px;
     border: 0; 
-}
-.send-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.form__fieldset:hover .form__svg {
-    fill: var(--blue);
-}
-.form__fieldset:hover {
-    border-color: var(--blue);
 }
 .second-section-list {
     display: flex;
