@@ -47,12 +47,13 @@ body{
     padding: 94px 0;
 }
 header {
+    height: 80px;
     border-bottom: 1px solid var(--header-border);
 }
-.header__container {
+.navigation {
     display: flex;
-    height: 80px;
     align-items: center;
+    justify-content: space-between;
 }
 .header__logo {
     font-family: 'Raleway';
